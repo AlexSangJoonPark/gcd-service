@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="gcd-service">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="gcd-service-web.war" deploy-path="/" handle="module:/resource/gcd-service-web/gcd-service-web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gcd-service-ejb.jar" deploy-path="/" handle="module:/resource/gcd-service-ejb/gcd-service-ejb">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hornetq-commons.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/hornetq/hornetq-commons/2.3.25.Final-redhat-1/hornetq-commons-2.3.25.Final-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hornetq-core-client.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/hornetq/hornetq-core-client/2.3.25.Final-redhat-1/hornetq-core-client-2.3.25.Final-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jgroups.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jgroups/jgroups/3.2.13.Final/jgroups-3.2.13.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hornetq-journal.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/hornetq/hornetq-journal/2.3.25.Final-redhat-1/hornetq-journal-2.3.25.Final-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hornetq-jms-client.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/hornetq/hornetq-jms-client/2.3.25.Final-redhat-1/hornetq-jms-client-2.3.25.Final-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-remote-naming.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/jboss-remote-naming/1.0.10.Final-redhat-1/jboss-remote-naming-1.0.10.Final-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-ejb-client.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/jboss-ejb-client/1.0.13.Final/jboss-ejb-client-1.0.13.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-logging.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/logging/jboss-logging/3.1.4.GA-redhat-2/jboss-logging-3.1.4.GA-redhat-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-marshalling.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/marshalling/jboss-marshalling/1.4.10.Final-redhat-1/jboss-marshalling-1.4.10.Final-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-marshalling-river.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/marshalling/jboss-marshalling-river/1.4.10.Final-redhat-1/jboss-marshalling-river-1.4.10.Final-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="netty.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/io/netty/netty/3.6.10.Final-redhat-1/netty-3.6.10.Final-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-remoting.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/remoting3/jboss-remoting/3.3.4.Final-redhat-1/jboss-remoting-3.3.4.Final-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-sasl.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/sasl/jboss-sasl/1.0.5.Final-redhat-1/jboss-sasl-1.0.5.Final-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-jms-api_1.1_spec.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/spec/javax/jms/jboss-jms-api_1.1_spec/1.0.1.Final-redhat-3/jboss-jms-api_1.1_spec-1.0.1.Final-redhat-3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xnio-api.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/xnio/xnio-api/3.0.13.GA-redhat-1/xnio-api-3.0.13.GA-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xnio-nio.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/xnio/xnio-nio/3.0.13.GA-redhat-1/xnio-nio-3.0.13.GA-redhat-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-as-build-config.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/as/jboss-as-build-config/7.5.0.Final-redhat-21/jboss-as-build-config-7.5.0.Final-redhat-21.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
