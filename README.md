@@ -1,8 +1,8 @@
-gcd-service-ear: Using Multiple Java EE 6 Technologies Deployed as an EAR
+gcd-service : Using Multiple Java EE 6 Technologies Deployed as an EAR
 ==============================================================================================
 Author: Alex Park
 Technologies: CDI, JPA, EJB, JAX-RS, JAX-WS, JMS, WAR, EAR  
-Summary: The `gcd-service-ear` demonstrates web-enabled database application, using CDI, EJB, JPA and Bean Validation, packaged as an EAR.   
+Summary: The `gcd-service` demonstrates web-enabled database application, using CDI, EJB, JPA and Bean Validation, packaged as an EAR.   
 Target Product: JBoss EAP  
 Reference : <https://github.com/jboss-developer/jboss-eap-quickstarts/>  
 
