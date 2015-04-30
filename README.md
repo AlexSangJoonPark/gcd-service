@@ -92,6 +92,7 @@ RESTFul Services
         i1=5&i2=20
 
 Web Services
+
 WSDL URL : `http://localhost:8080/gcd-service-web/GcdWS?wsdl`
 
 1. `getGcd`  : return gcd number by two numbers from JMS queue
