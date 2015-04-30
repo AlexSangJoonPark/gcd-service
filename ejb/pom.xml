@@ -33,7 +33,7 @@
         <dependency>
             <groupId>org.jboss.as</groupId>
             <artifactId>jboss-as-jms-client-bom</artifactId>
-            <version>${version.jboss.as}</version>
+			<version>${version.jboss.as}</version>
             <type>pom</type>
         </dependency>
         
