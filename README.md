@@ -55,14 +55,14 @@ Access the application
 ---------------------
 RESTFul Services
 
-1. http://localhost:8080/gcd-service-web/rest/gcd [GET]
-2. http://localhost:8080/gcd-service-web/rest/gcd [POST] formparam i1=integer&i2=integer
+1. http://localhost:8080/gcd-service-web/rest/gcd [GET] : return all input numbers what have been requested from database
+2. http://localhost:8080/gcd-service-web/rest/gcd [POST] formparam i1=integer&i2=integer : register two numbers into JMS queue
 
 Web Services
 WSDL URL : http://localhost:8080/gcd-service-web/GcdWS?wsdl
-1. getGcd
-2. getGcdList
-3. getSum
+1. getGcd  : return gcd number by two numbers from JMS queue
+2. gcdList : return all gcd number what have been calculated from database
+3. gcdSum  : return total sum of gcd from database
 
 Undeploy the Archive
 --------------------
