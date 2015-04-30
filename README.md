@@ -76,7 +76,20 @@ Access the application
 RESTFul Services
 
 1. http://localhost:8080/gcd-service-web/rest/gcd [GET] : return all input numbers what have been requested from database
+
+        GET /gcd-service-web/rest/gcd HTTP/1.1
+        Host: localhost:8080
+        Cache-Control: no-cache
+        Content-Type: application/x-www-form-urlencoded
+
 2. http://localhost:8080/gcd-service-web/rest/gcd [POST] formparam i1=integer&i2=integer : register two numbers into JMS queue
+
+        POST /gcd-service-web/rest/gcd HTTP/1.1
+        Host: localhost:8080
+        Cache-Control: no-cache
+        Content-Type: application/x-www-form-urlencoded
+        
+        i1=5&i2=20
 
 Web Services
 WSDL URL : http://localhost:8080/gcd-service-web/GcdWS?wsdl
