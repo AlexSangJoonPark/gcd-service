@@ -82,8 +82,28 @@ Web Services
 WSDL URL : http://localhost:8080/gcd-service-web/GcdWS?wsdl
 
 1. getGcd  : return gcd number by two numbers from JMS queue
+        <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.gcd.alexpark.com/">
+           <soapenv:Header/>
+           <soapenv:Body>
+              <ws:getGcd/>
+           </soapenv:Body>
+        </soapenv:Envelope>
+
 2. gcdList : return all gcd number what have been calculated from database
+        <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.gcd.alexpark.com/">
+           <soapenv:Header/>
+           <soapenv:Body>
+              <ws:gcdList/>
+           </soapenv:Body>
+        </soapenv:Envelope>
+
 3. gcdSum  : return total sum of gcd from database
+        <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.gcd.alexpark.com/">
+           <soapenv:Header/>
+           <soapenv:Body>
+              <ws:gcdSum/>
+           </soapenv:Body>
+        </soapenv:Envelope>
 
 Undeploy the Archive
 --------------------
