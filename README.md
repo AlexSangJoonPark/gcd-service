@@ -1,4 +1,4 @@
-gcd-service : Restful and Web Service using Java EE 6 Technologies Deployed as an EAR
+gcd-service : Greatest Common Divisor(GCD) Restful and Web Service using Java EE 6 Technologies Deployed as an EAR
 ==============================================================================================
 Technologies: CDI, JPA, EJB, JAX-RS, JAX-WS, JMS, WAR, EAR  
 Summary: The `gcd-service` demonstrates web-enabled database application, using CDI, EJB, JPA and JMS, packaged as an EAR.   
