@@ -75,14 +75,14 @@ Access the application
 ---------------------
 RESTFul Services
 
-1. http://localhost:8080/gcd-service-web/rest/gcd [GET] : return all input numbers what have been requested from database
+1. `http://localhost:8080/gcd-service-web/rest/gcd [GET]` : return all input numbers what have been requested from database
 
         GET /gcd-service-web/rest/gcd HTTP/1.1
         Host: localhost:8080
         Cache-Control: no-cache
         Content-Type: application/x-www-form-urlencoded
 
-2. http://localhost:8080/gcd-service-web/rest/gcd [POST] formparam i1=integer&i2=integer : register two numbers into JMS queue
+2. `http://localhost:8080/gcd-service-web/rest/gcd [POST] i1=integer&i2=integer` : register two numbers into JMS queue
 
         POST /gcd-service-web/rest/gcd HTTP/1.1
         Host: localhost:8080
@@ -92,9 +92,9 @@ RESTFul Services
         i1=5&i2=20
 
 Web Services
-WSDL URL : http://localhost:8080/gcd-service-web/GcdWS?wsdl
+WSDL URL : `http://localhost:8080/gcd-service-web/GcdWS?wsdl`
 
-1. getGcd  : return gcd number by two numbers from JMS queue
+1. `getGcd`  : return gcd number by two numbers from JMS queue
 
         <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.gcd.alexpark.com/">
            <soapenv:Header/>
@@ -103,7 +103,7 @@ WSDL URL : http://localhost:8080/gcd-service-web/GcdWS?wsdl
            </soapenv:Body>
         </soapenv:Envelope>
 
-2. gcdList : return all gcd number what have been calculated from database
+2. `gcdList` : return all gcd number what have been calculated from database
 
         <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.gcd.alexpark.com/">
            <soapenv:Header/>
@@ -112,7 +112,7 @@ WSDL URL : http://localhost:8080/gcd-service-web/GcdWS?wsdl
            </soapenv:Body>
         </soapenv:Envelope>
 
-3. gcdSum  : return total sum of gcd from database
+3. `gcdSum`  : return total sum of gcd from database
 
         <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.gcd.alexpark.com/">
            <soapenv:Header/>
