@@ -4,7 +4,7 @@
 batch
 
 # Configure the JMS test queue
-jms-queue add --queue-address=testQueue --entries=queue/test,java:jboss/exported/jms/queue/test
+jms-queue add --queue-address=gcdQueue --entries=queue/gcd,java:jboss/exported/jms/queue/gcd
 
 # Run the batch commands
 run-batch

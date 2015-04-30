@@ -26,20 +26,40 @@ Start the JBoss EAP Server
 1. Open a command prompt and navigate to the root of the JBoss EAP directory.
 2. The following shows the command line to start the server:
 
-        For Linux:   EAP_HOME/bin/standalone.sh
-        For Windows: EAP_HOME\bin\standalone.bat
+        For Linux:   EAP_HOME/bin/standalone.sh -c standalone-full.xml
+        For Windows: EAP_HOME\bin\standalone.bat -c standalone-full.xml
 
-Set test user creidential for JMS
--------------------------
+Add an Application User
+----------------
 
+This gcd-service uses secured management interfaces and requires that you create the following application user to access the running application. 
+
+| **UserName** | **Realm** | **Password** | **Roles** |
+
+|:-----------|:-----------|:-----------|:-----------|
+
+| gcdUser| ApplicationRealm | gcdPwd1!| guest |
+
+To add the application user, open a command prompt and type the following command:
+
+        For Linux:   EAP_HOME/bin/add-user.sh -a -u 'gcdUser' -p 'gcdPwd1!' -g 'guest'
+        For Windows: EAP_HOME\bin\add-user.bat  -a -u gcdUser -p gcdPwd1! -g guest
 
 
 Configure JMS Queue via JBoss console command
 -------------------------
+1. Review the `configure-jms.cli` file in the root of this gcd-service directory. This script adds the `test` queue to the `messaging` subsystem in the server configuration file.
+
+2. Open a new command prompt, navigate to the root directory of this gcd-service, and run the following command, replacing EAP_HOME with the path to your server:
+
+        For Linux: EAP_HOME/bin/jboss-cli.sh --connect --file=configure-jms.cli 
+        For Windows: EAP_HOME\bin\jboss-cli.bat --connect --file=configure-jms.cli 
+   You should see the following result when you run the script:
+
+        The batch executed successfully.
+        {"outcome" => "success"}
 
 
-
- 
 Build and Deploy the GDC Service
 -------------------------
 1. Make sure you have started the JBoss EAP server as described above.

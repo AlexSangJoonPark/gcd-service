@@ -4,7 +4,7 @@
 batch
 
 # Configure the JMS test queue
-jms-queue remove --queue-address=testQueue
+jms-queue remove --queue-address=gcdQueue
 
 # Run the batch commands
 run-batch
